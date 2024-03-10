@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/HotelManagement
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update # This line sets Hibernate to update the schema automatically
+        show_sql: true # Set to true to enable SQL logging
+        format_sql: true # Set to true to format SQL statements
